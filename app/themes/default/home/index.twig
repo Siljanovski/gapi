@@ -1,0 +1,50 @@
+{% extends "layouts/default" %}
+{% block content %}
+    <div class="mv-content">
+        <h1 class="mv-brand">MVCJS &nbsp;&nbsp;&nbsp;{{ version }}</h1>
+
+        <h2 class="mv-brand">Fast, TDD driven, opinionated lightweight mvc framework for Node.js</h2>
+
+        <div class="mv-command">$ npm install mvcjs</div>
+        <p class="mv-p">
+            Bulid status MVCJS:
+            <div>
+                <a href="https://travis-ci.org/igorzg/node-mvc" target="_blank" class="mv-a">
+                    <img src="https://api.travis-ci.org/igorzg/node-mvc.svg?branch=master"/>
+                </a>
+            </div>
+
+            Bulid status demo app:
+            <div>
+                <a href="https://travis-ci.org/igorzg/mvcjs-testapp" target="_blank" class="mv-a">
+                    <img src="https://travis-ci.org/igorzg/mvcjs-testapp.svg?branch=master"/>
+                </a>
+            </div>
+        </p>
+
+        <p class="mv-p">
+            Follow us on github:
+
+            <div>
+                <a class="github-button" href="https://github.com/igorzg/node-mvc" data-icon="octicon-eye">Watch</a>
+                <a class="github-button" href="https://github.com/igorzg/node-mvc" data-icon="octicon-star">Star</a>
+                <a class="github-button" href="https://github.com/igorzg/node-mvc" data-icon="octicon-git-branch">Fork</a>
+            </div>
+        </p>
+
+        <h2 class="mv-h2">Features</h2>
+        <ul class="mv-ul">
+            <li>Improves quality of your code</li>
+            <li>Type checking at runtime</li>
+            <li>Fully extensible</li>
+            <li>TDD driven</li>
+            <li>Custom DI</li>
+            <li>Component based</li>
+            <li>Twig (swigjs) templating engine</li>
+            <li>Dynamic routing</li>
+            <li>Logger</li>
+            <li>Controller inheritance</li>
+        </ul>
+    </div>
+    {% parent %}
+{% endblock %}
